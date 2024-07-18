@@ -63,7 +63,7 @@ def generate_image():
         return jsonify({'error': 'Prompt is required'}), 400
 
     payload = {
-        "key": {SECRET_KEY},
+        "key": SECRET_KEY,
         "prompt": prompt,
         "negative_prompt": "bad quality"
     }
