@@ -43,6 +43,9 @@ const Posts = ({images}) => {
 
 const ImageCard = ({ image, large }) => {
   const [imagesrc,setimagesrc] = useState(image.pict);
+  useEffect(() => {
+    setimagesrc(image.pict); 
+  }, [image.pict]);
   if (!image) return null; 
 
   const handleErr = () =>{
