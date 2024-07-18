@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:5000/api/posts/GetAllPosts', {
+      const response = await fetch('https://arti-mages.vercel.app/api/posts/GetAllPosts', {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

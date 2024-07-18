@@ -24,7 +24,7 @@ const CreatePosts = () => {
   const handleGenerateImage = async () => {
     setImageError(false);
     setLoading(true);
-    const response = await fetch("http://localhost:5000/generate-image", {
+    const response = await fetch("https://arti-mages.vercel.app/generate-image", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const CreatePosts = () => {
 
   const handlePublish = async () => {
     setLoading(true); // Set loading state
-    const response = await fetch("http://localhost:5000/api/posts/CreatePost", {
+    const response = await fetch("https://arti-mages.vercel.app/api/posts/CreatePost", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

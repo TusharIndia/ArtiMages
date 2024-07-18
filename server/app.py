@@ -16,7 +16,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['MONGO_URI'] = DATABASE_URL
 
-CORS(app, origins=['http://localhost:3000'], methods=['GET', 'POST'], 
+CORS(app, origins=['https://artimages-tushars-projects-aa4fc2bf.vercel.app/'], methods=['GET', 'POST'], 
      allow_headers=['Content-Type'])
 
 client = MongoClient(DATABASE_URL)
